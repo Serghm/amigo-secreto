@@ -9,4 +9,17 @@ function agregarAmigos(){
             return;
         
     }
+
+    nombres.forEach(nombreAmigo => {
+        if(nombreAmigo !== '' && !amigos.map(a => a.tolowerCase()).includes(nombreAmigo.tolowerCase())){
+            amigos.push(nombreAmigo);
+
+        }else if(nombreAmigo !== ''){
+            alert(`"El nombre: ${nombreAmigo} ya se ingreso previamente" `);
+        }
+    });
+
+
+
+
 }
