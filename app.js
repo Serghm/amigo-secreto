@@ -19,7 +19,17 @@ function agregarAmigos(){
         }
     });
 
+    actualizarListaAmigos();
+        ingresarAmigo.value = '';
+        ingresarAmigo.focus();
+}
 
+function sortearAmigo(){
+    if (amigos.length <2){
+        alert('Ingresa por lo menos dos amigos para el sorteo.');
+        return;
+    }
 
+    
 
 }
