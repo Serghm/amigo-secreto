@@ -62,7 +62,7 @@ function actualizarListaAmigos(){
     let lista = document.getElementById('lista de amigos');
     lista.innerHTML = '';
     
-    for(let i = 0; < amigos.length; i ++ ){
+    for(let i = 0; i < amigos.length; i++ ){
         let item = document.createElement('li');
         item.textContent = `${amigos}`;
         lista.appendChild(item);
@@ -79,10 +79,6 @@ function reiniciar(){
 
 }
 
-
-    totalAmigos.textContent = (`total de amigos: ${amigos.length}`);
-
-}
 
 document.getElementById('amigo').addEventListener('keypress', function (event){
     if (event.key === 'Enter'){
