@@ -15,7 +15,7 @@ function agregarAmigo(){
             amigos.push(nombreAmigo);
 
         }else if(nombreAmigo !== ''){
-            alert(`"El nombre: ${nombreAmigo} ya se ingreso previamente" `);
+            alert(`"El nombre: ${nombreAmigo} ya fue ingresado" `);
         }
     });
 
@@ -75,7 +75,7 @@ function reiniciar(){
     document.getElementById('resultado').innerHTML = '';
     document.getElementById('amigo').focus();
     //habilito el boton sortear
-    document.querySelector('button-reset').disabled = false;
+    document.querySelector('.button-reset').disabled = false;
 
 }
 
