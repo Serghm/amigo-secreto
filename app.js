@@ -1,6 +1,6 @@
 let amigos = [];
 
-function agregarAmigos(){
+function agregarAmigo(){
     let ingresarAmigo = document.getElementById('amigo');
     let nombres = ingresarAmigo.value.split(',').map(nombre => nombre.trim())
 
@@ -11,7 +11,7 @@ function agregarAmigos(){
     }
 
     nombres.forEach(nombreAmigo => {
-        if(nombreAmigo !== '' && !amigos.map(a => a.tolowerCase()).includes(nombreAmigo.tolowerCase())){
+        if(nombreAmigo !== '' && !amigos.map(a => a.toLowerCase()).includes(nombreAmigo.toLowerCase())){
             amigos.push(nombreAmigo);
 
         }else if(nombreAmigo !== ''){
@@ -30,6 +30,13 @@ function sortearAmigo(){
         return;
     }
 
+    let indiceSorteado = Math.floor(Math.random() * amigos.length);
+    let amigoSorteado = amigos[indiceSorteado];
+
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = (`<p>Tu amigo secreto es: ${amigoSorteado}</p>`);
+
+    
     
 
 }
