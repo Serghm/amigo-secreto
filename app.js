@@ -54,7 +54,7 @@ function sortearAmigo(){
 } 
 
 // desabilita el boton sortear amigo
-document.querySelector('.button-reset').disable = true;
+document.querySelector('.button-reset').disabled = true;
 
 }
 
@@ -64,7 +64,7 @@ function actualizarListaAmigos(){
     
     for(let i = 0; i < amigos.length; i++ ){
         let item = document.createElement('li');
-        item.textContent = `${amigos}`;
+        item.textContent = amigos[i];
         lista.appendChild(item);
     }
 }
@@ -75,7 +75,7 @@ function reiniciar(){
     document.getElementById('resultado').innerHTML = '';
     document.getElementById('amigo').focus();
     //habilito el boton sortear
-    document.querySelector('button-reset').disable = false;
+    document.querySelector('button-reset').disabled = false;
 
 }
 
