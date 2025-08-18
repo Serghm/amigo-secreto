@@ -85,3 +85,4 @@ document.getElementById('amigo').addEventListener('keypress', function (event){
         agregarAmigo();
     }
 })
+
