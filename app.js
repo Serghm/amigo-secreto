@@ -59,7 +59,7 @@ document.querySelector('.button-draw').disable = true;
 }
 
 function actualizarListaAmigos(){
-    let lista = document.getElementById('lista de amigos');
+    let lista = document.getElementById('listaAmigos');
     lista.innerHTML = '';
     
     for(let i = 0; i < amigos.length; i++ ){
