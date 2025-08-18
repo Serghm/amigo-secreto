@@ -54,7 +54,7 @@ function sortearAmigo(){
 } 
 
 // desabilita el boton sortear amigo
-document.querySelector('.button-draw').disable = true;
+document.querySelector('.button-reset').disable = true;
 
 }
 
@@ -75,7 +75,7 @@ function reiniciar(){
     document.getElementById('resultado').innerHTML = '';
     document.getElementById('amigo').focus();
     //habilito el boton sortear
-    document.querySelector('button-draw').disable = false;
+    document.querySelector('button-reset').disable = false;
 
 }
 
