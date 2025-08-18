@@ -36,7 +36,20 @@ function sortearAmigo(){
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = (`<p>Tu amigo secreto es: ${amigoSorteado}</p>`);
 
-    
-    
+
+ 
+}
+
+function actualizarListaAmigos(){
+    let lista = document.getElementById('lista de amigos');
+    let totalAmigos = document.getElementById('totalAmigos');
+    lista.innerHTML = '';
+
+    for(let i = 0; i < amigos.length; i++){
+        let item = document.createElementById('li');
+        item.textContent = (`${i + 1} ${amigos[i]}`);
+        lista.appendChild(item);
+    }
+    totalAmigos.textContent = (`total de amigos: ${amigos.length}`);
 
 }
