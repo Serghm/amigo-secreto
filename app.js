@@ -69,6 +69,16 @@ function actualizarListaAmigos(){
     }
 }
 
+function reiniciar(){
+    amigos = [];
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('resultado').innerHTML = '';
+    document.getElementById('amigo').focus();
+    //habilito el boton sortear
+    document.querySelector('button-draw').disable = false;
+
+}
+
 
     totalAmigos.textContent = (`total de amigos: ${amigos.length}`);
 
