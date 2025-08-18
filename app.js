@@ -52,18 +52,24 @@ function sortearAmigo(){
         resultado.innerHTML += (`<p class="result-item">${amigos[i]} -> ${sorteado}</p>`);
 
 } 
+
+// desabilita el boton sortear amigo
+document.querySelector('.button-draw').disable = true;
+
 }
 
 function actualizarListaAmigos(){
     let lista = document.getElementById('lista de amigos');
-    let totalAmigos = document.getElementById('totalAmigos');
     lista.innerHTML = '';
-
-    for(let i = 0; i < amigos.length; i++){
-        let item = document.createElementById('li');
-        item.textContent = (`${i + 1} ${amigos[i]}`);
+    
+    for(let i = 0; < amigos.length; i ++ ){
+        let item = document.createElement('li');
+        item.textContent = `${amigos}`;
         lista.appendChild(item);
     }
+}
+
+
     totalAmigos.textContent = (`total de amigos: ${amigos.length}`);
 
 }
